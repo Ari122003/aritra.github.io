@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Education</title>
+</head>
+<body> 
+
+
+
+<!-- NAVIGATION SECTION -->
+
+
+
+
+
+
+
+    <nav class="bg-gray-800 bg-opacity-5">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Icon when menu is closed.
+        
+                    Heroicon name: outline/bars-3
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                    Icon when menu is open.
+        
+                    Heroicon name: outline/x-mark
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                  href="index.html"
+                  id="tag"
+                  class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                  aria-current="page" 
+                  >Home</a
+                >
+                  <a
+                    href="background.html"
+                    id="tag"
+                    class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                    aria-current="page" 
+                    >Background</a
+                  >
+  
+                  <a
+                    href="education.html"
+                    id="tag"
+                    class="text-black px-3 py-2 rounded-md text-sm font-medium"
+                    >Education</a
+                  >
+  
+                  <a
+                    href="contact.html"
+                    id="tag"
+                    class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                    >Contact me</a
+                  >
+  
+                  <a
+                    href="#"
+                    id="tag"
+                    class=" text-black  px-3 py-2 rounded-md text-sm font-medium"
+                    >Skills</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+             
+                <span class="sr-only">View notifications</span>
+                
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+              </button>
+  
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button
+                    type="button"
+                    class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <span class="sr-only">Open user menu</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="me.jpg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+  
+                <!--
+                    Dropdown menu, show/hide based on menu state.
+        
+                    Entering: "transition ease-out duration-100"
+                      From: "transform opacity-0 scale-95"
+                      To: "transform opacity-100 scale-100"
+                    Leaving: "transition ease-in duration-75"
+                      From: "transform opacity-100 scale-100"
+                      To: "transform opacity-0 scale-95"
+                  -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="index.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+              href="background.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Background</a
+            >
+  
+            <a
+              href="education.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Education</a
+            >
+  
+            <a
+              href="contact.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Contact me</a
+            >
+  
+            <a
+              href="#"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Skills</a
+            >
+          </div>
+        </div>
+    </nav>
+      <hr>
+
+
+
+
+<!-- CONTENT SECTION -->
+
+
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="school.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">My School</h2>
+          <p class="leading-relaxed text-base">I have compeleted my secondary and higher secondary education from B.E College Model School , which is inside IIEST Shibpur campus.For more details click on the link below.</p>
+         <a   href="https://www.google.com/search?gs_ssp=eJwFwTEOgCAMAMC4Gh_gyOIqFUmxPMFfQCkwYDAxMT7fu3HSRW-VnaX63jD4Bb49gHHElBDRMWQPn7EkwUXMghzkoHOOqyjurUkRdfUkTT1ce28_gawYFg&q=b.e+college+model+school&oq=b&aqs=chrome.1.35i39i355j46i39i175i199j69i57j69i59l2j0i131i433i512l4j46i199i465i512.2314j0j15&sourceid=chrome&ie=UTF-8" target="blank"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Click here</button></a>
+        </div> 
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="tint.jpg">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">My college</h2>
+          <p class="leading-relaxed text-base">Currently I am studying B.Tech in Electronics and Communication Engineering from Techno International New Town, which is at New Town, Kolkata.For more details click on the link below.</p>
+          <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TdIz0gqzDFg9JItSU3OyMtXyMwrSS3KSyzJzM9LzFHISy1XKMkvzwMAM_wPIA&q=techno+international+new+town&oq=TE&aqs=chrome.1.69i57j46i39j46i67j0i67j0i131i433i512j0i67j46i67i131i199i433i465j46i67i175i199j0i67j0i271.1968j0j15&sourceid=chrome&ie=UTF-8" target="blank"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Click here</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
