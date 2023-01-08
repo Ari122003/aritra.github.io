@@ -1,0 +1,27 @@
+.material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 700,
+          'GRAD' 0,
+          'opsz' 48;
+        }
+
+        #heading{
+            color: rgb(8, 8, 149);
+            font:bold;
+            font-size: 2em;
+        }
+
+        #wel{
+            font-family: 'East Sea Dokdo', cursive;
+            color:rgb(9, 118, 53);
+            text-shadow: 5px 5px black;
+          }
+
+        #tag:hover{
+
+            background-color:grey;
+    
+        }
+
+        
