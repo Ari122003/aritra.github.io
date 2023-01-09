@@ -6,7 +6,7 @@
           'opsz' 48;
         }
 
-        #heading{
+        .heading{
             color: rgb(8, 8, 149);
             font:bold;
             font-size: 2em;
