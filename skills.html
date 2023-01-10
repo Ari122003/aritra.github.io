@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Skills</title>
+</head>
+<body>
+    
+
+
+
+
+    <!-- Nvigation -->
+
+
+
+
+
+
+    <nav class="bg-gray-800 bg-opacity-5">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Icon when menu is closed.
+        
+                    Heroicon name: outline/bars-3
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                    Icon when menu is open.
+        
+                    Heroicon name: outline/x-mark
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                  href="index.html"
+                  id="tag"
+                  class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                  aria-current="page" 
+                  >Home</a
+                >
+                  <a
+                    href="background.html"
+                    id="tag"
+                    class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                    aria-current="page" 
+                    >Background</a
+                  >
+  
+                  <a
+                    href="education.html"
+                    id="tag"
+                    class="text-black px-3 py-2 rounded-md text-sm font-medium"
+                    >Education</a
+                  >
+  
+                  <a
+                    href="contact.html"
+                    id="tag"
+                    class=" text-black px-3 py-2 rounded-md text-sm font-medium"
+                    >Contact me</a
+                  >
+  
+                  <a
+                    href="skills.html"
+                    id="tag"
+                    class=" text-black  px-3 py-2 rounded-md text-sm font-medium"
+                    >Skills</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+             
+                <span class="sr-only">View notifications</span>
+                
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+              </button>
+  
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button
+                    type="button"
+                    class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    id="user-menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <span class="sr-only">Open user menu</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="me.jpg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+  
+                <!--
+                    Dropdown menu, show/hide based on menu state.
+        
+                    Entering: "transition ease-out duration-100"
+                      From: "transform opacity-0 scale-95"
+                      To: "transform opacity-100 scale-100"
+                    Leaving: "transition ease-in duration-75"
+                      From: "transform opacity-100 scale-100"
+                      To: "transform opacity-0 scale-95"
+                  -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="index.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+
+            <a
+              href="background.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Background</a
+            >
+  
+            <a
+              href="education.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Education</a
+            >
+  
+            <a
+              href="contact.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Contact me</a
+            >
+  
+            <a
+              href="skills.html"
+              id="tag"
+              class="bg-gray-300 text-black block px-3 py-2 rounded-md text-base font-medium"
+              >Skills</a
+            >
+          </div>
+        </div>
+    </nav>
+      <hr>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- Images -->
+
+
+
+
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 heading">My skills :)</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">After starting my enginering journey I got interested about Programming. I have learned these skills in one year.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="c.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">C programming language</h1>
+              <p class="leading-relaxed">I started my propgramming journey with C. It helped me to clear basics concepts of programming.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="dsa.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">Data Structures</h1>
+              <p class="leading-relaxed">Data structures is really a tough concept. I use C language to implement data structures.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="py.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">Python</h1>
+              <p class="leading-relaxed">Python is the easiest language I have ever used. I know basic python and python modules.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="ht.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">HTML-CSS</h1>
+              <p class="leading-relaxed">Now I am learning Web Development. I know basic HTML and CSS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="js.jpg">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">Java Script</h1>
+              <p class="leading-relaxed">Now I am learning Java Script and it's frameworks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="react.png">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              
+              <h1 class="title-font text-lg font-medium heading mb-3">React</h1>
+              <p class="leading-relaxed">After completing Javascript I will jump to React.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
